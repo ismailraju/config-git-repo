@@ -5,12 +5,12 @@
 #    register-with-eureka: true
 #    fetch-registry: true
     
-spring:
-  application:
-    name: CONFIG-SERVICE
+#spring:
+#  application:
+#    name: CONFIG-SERVICE
 #  zipkin:
 #    enabled: true
 #    base-url:  ${ZIPKIN_SERVER_URL:http://zipkin-server:9411/}
 
-server:
-  port: 8083
+#server:
+#  port: 8083
