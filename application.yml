@@ -12,9 +12,9 @@ spring:
     enabled: true
     base-url:  ${ZIPKIN_SERVER_URL:http://localhost:9411/}
 #  profiles: docker
-  config:
-    activate:
-      on-profile: docker
+#  config:
+#    activate:
+#      on-profile: docker
 
 
 
