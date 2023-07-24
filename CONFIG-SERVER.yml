@@ -1,13 +1,16 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: ${REGISTRY_SERVER_URL:http://localhost:8761/eureka/}
     register-with-eureka: true
     fetch-registry: true
     
 spring:
   application:
     name: CONFIG-SERVICE
+  zipkin:
+    enabled: true
+    base-url:  ${ZIPKIN_SERVER_URL:http://localhost:9411/}
 
 server:
   port: 8083
