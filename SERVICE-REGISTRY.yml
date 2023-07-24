@@ -1,16 +1,16 @@
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: ${REGISTRY_SERVER_URL:http://localhost:8761/eureka/}
-#    register-with-eureka: true
-#    fetch-registry: true
+eureka:
+  client:
+    service-url:
+      defaultZone: ${REGISTRY_SERVER_URL:http://localhost:8761/eureka/}
+    register-with-eureka: true
+    fetch-registry: true
     
-#spring:
+spring:
 #  application:
 #    name: SERVICE-REGISTRY
-#  zipkin:
-#    enabled: true
-#    base-url:  ${ZIPKIN_SERVER_URL:http://localhost:9411/}
+  zipkin:
+    enabled: true
+    base-url:  ${ZIPKIN_SERVER_URL:http://localhost:9411/}
 
 #server:
 #  port: 8761
