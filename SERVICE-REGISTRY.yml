@@ -5,12 +5,12 @@
 #    register-with-eureka: true
 #    fetch-registry: true
     
-spring:
-  application:
-    name: SERVICE-REGISTRY
+#spring:
+#  application:
+#    name: SERVICE-REGISTRY
 #  zipkin:
 #    enabled: true
 #    base-url:  ${ZIPKIN_SERVER_URL:http://localhost:9411/}
 
-server:
-  port: 8761
+#server:
+#  port: 8761
