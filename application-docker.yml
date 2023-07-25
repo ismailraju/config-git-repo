@@ -23,7 +23,8 @@ spring:
 #    activate:
 #      on-profile: docker
 
-
+  banner:
+    location: classpath:banner.txt
 
 #server:
 #  port: 8761
