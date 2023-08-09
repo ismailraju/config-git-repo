@@ -25,6 +25,13 @@ spring:
           predicates:
             - Path=/user/**,/auth/**
 
+        - id: product-service
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+            - Path=/product/**
+          filters:
+            - AuthenticationFilter  
+
 
 #  zipkin:
 #    enabled: true
