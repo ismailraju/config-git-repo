@@ -2,8 +2,6 @@ server:
   port: 8084
 
 spring:
-  application:
-    name: IDENTITY-SERVICE
   datasource:
     url: jdbc:h2:mem:authdb
     driverClassName: org.h2.Driver
@@ -28,33 +26,10 @@ spring:
         trace: true
         web-allow-others: true
 
+  application:
+    name: PRODUCT-SERVICE
 
 
-
-jwt:
-  secret: 5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437
-
-
-
-
-
-
-
-
-
-
-
-
-#  zipkin:
-#    enabled: true
-#    base-url:  ${ZIPKIN_SERVER_URL:http://zipkin-server:9411/}
-
-
-
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone:  ${REGISTRY_SERVER_URL:http://service-registry:8761/eureka/}
-#    register-with-eureka: true
-#    fetch-registry: true
-    
+  cloud:
+    config:
+      profile: docker
