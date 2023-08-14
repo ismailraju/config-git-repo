@@ -31,7 +31,14 @@ spring:
           predicates:
             - Path=/product/**
           filters:
-            - AuthenticationFilter            
+            - AuthenticationFilter  
+
+        - id: product-query-service
+          uri: lb://PRODUCT-QUERY-SERVICE
+          predicates:
+            - Path=/productquery/**
+          filters:
+            - AuthenticationFilter        
 #  zipkin:
 #    enabled: true
 #    base-url:  ${ZIPKIN_SERVER_URL:http://localhost:9411/}
