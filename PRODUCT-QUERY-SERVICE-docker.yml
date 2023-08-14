@@ -27,7 +27,7 @@ spring:
         web-allow-others: true
 
   application:
-    name: PRODUCT-SERVICE
+    name: PRODUCT-QUERY-SERVICE
 
 
   cloud:
