@@ -1,7 +1,3 @@
-server:
-  port: 8086
-
-
 logging:
   level:
     org.springframework.security: trace
@@ -27,6 +23,3 @@ spring:
     init:
       mode: always
 
-
-  application:
-    name: PRODUCT-SERVICE

@@ -1,15 +1,4 @@
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone:  ${REGISTRY_SERVER_URL:http://service-registry:8761/eureka/}
-#    register-with-eureka: true
-#    fetch-registry: true
-
 spring:
-  application:
-    name: GATEWAY
-
-
 
   cloud:
     gateway:
@@ -39,13 +28,7 @@ spring:
           filters:
             - AuthenticationFilter  
 
-
-#  zipkin:
-#    enabled: true
-#    base-url:  ${ZIPKIN_SERVER_URL:http://zipkin-server:9411/}
-
-server:
-  port: 80
+ 
 
 jwt:
   secret: 5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437

@@ -12,5 +12,3 @@ spring:
     enabled: true
     base-url:  ${ZIPKIN_SERVER_URL:http://zipkin-server:9411/}
 
-server:
-  port: 8083
