@@ -26,7 +26,14 @@ spring:
           predicates:
             - Path=/productquery/**
           filters:
-            - AuthenticationFilter        
+            - AuthenticationFilter    
+
+        - id: payment-service
+          uri: lb://PAYMENT-SERVICE
+          predicates:
+            - Path=/payment/**
+          filters:
+            - AuthenticationFilter      
  
 
 jwt:
