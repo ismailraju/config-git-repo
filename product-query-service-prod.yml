@@ -12,6 +12,9 @@ spring:
 #              packages: com.ssl.productservice.dto.ProductEvent
 
 
+  zipkin:
+    enabled: true
+    base-url:  ${ZIPKIN_SERVER_URL:http://localhost:9411/}
 
 
 
@@ -29,6 +32,13 @@ logging:
 #    org.hibernate: ERROR
 
 
+eureka:
+  client:
+    service-url:
+      defaultZone: ${REGISTRY_SERVER_URL:http://localhost:8761/eureka/}
+    register-with-eureka: true
+    fetch-registry: true
+    enabled: false
 
 
 
